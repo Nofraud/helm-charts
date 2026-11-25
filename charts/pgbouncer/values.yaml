@@ -67,10 +67,7 @@ deploymentAnnotations: {}
 
 podAnnotations: {}
 
-# Non-root default. runAsUser 1000 is unverified for the image; override if it needs another UID.
-podSecurityContext:
-  runAsNonRoot: true
-  runAsUser: 1000
+podSecurityContext: {}
   # fsGroup: 2000
 
 securityContext: {}

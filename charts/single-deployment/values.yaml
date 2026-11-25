@@ -54,10 +54,7 @@ podAffinity: {}
 
 ## Security context settings to be added to the pods
 ##
-# Non-root default. runAsUser 1000 is unverified for the default image; override for images that need another UID.
-podSecurityContext:
-  runAsNonRoot: true
-  runAsUser: 1000
+podSecurityContext: {}
 #  sysctls:
 #  - name: net.ipv4.ip_local_port_range
 #    value: "1024 65535"
