@@ -27,7 +27,10 @@ deploymentAnnotations: {}
 deploymentLabels: {}
 podAnnotations: {}
 podLabels: {}
-podSecurityContext: {}
+# Non-root default. The metabase image runs as UID 2000; override to change.
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 2000
 image:
   repository: metabase/metabase
   # Overrides the image tag whose default is the chart appVersion.
